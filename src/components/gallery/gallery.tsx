@@ -39,8 +39,8 @@ export default function gallery({ galleryRef }) {
       thumbnail: "/bedroom-3.jpeg",
     },
     {
-      original: "/bathroom-2.jpeg",
-      thumbnail: "/bathroom-2.jpeg",
+      original: "/bathroom-2.png",
+      thumbnail: "/bathroom-2.png",
       thumbnailHeight: 69,
     },
     // more images...
@@ -49,7 +49,7 @@ export default function gallery({ galleryRef }) {
   return (
     <div ref={galleryRef} className="p-4">
       <Fade direction="down">
-        <h3 className="text-2xl text-secondary my-2">Galería</h3>
+        <h3 className="text-2xl text-secondary my-4 md:text-3xl">Galería</h3>
       </Fade>
       <Fade>
         <ImageGallery

@@ -3,13 +3,16 @@ import { Fade } from "react-awesome-reveal";
 
 export default function Contact({ contactRef }) {
   return (
-    <div ref={contactRef} className="pt-4 pb-6 px-4 flex flex-col gap-2">
+    <div
+      ref={contactRef}
+      className="pt-4 pb-6 px-4 flex flex-col items-center justify-center gap-2 h-[300px]"
+    >
       <Fade direction="down">
-        <h3 className="text-2xl text-secondary">Haz una reserva</h3>
+        <h3 className="text-2xl text-secondary md:text-3xl">Haz una reserva</h3>
       </Fade>
       <Fade cascade>
-        <p className="text-primary">
-          No esperes mas y contáctanos{" "}
+        <p className="text-primary md:text-lg">
+          No esperes más y contáctanos{" "}
           <a
             href="https://wa.me/+584168840028"
             target="_blank"
@@ -18,7 +21,7 @@ export default function Contact({ contactRef }) {
             aquí
           </a>
         </p>
-        <p className="text-primary">
+        <p className="text-primary md:text-lg">
           Estaremos felices de atenderte y despejar todas tus dudas
         </p>
       </Fade>

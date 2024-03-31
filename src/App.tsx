@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <div className="bg-neutral-50 mx-auto border-solid border-2 border-indigo-600 text-center max-w-[800px]">
+    <div className="bg-neutral-50 mx-auto text-center max-w-[800px]">
       <Header />
       <Navbar
         handleScroll={handleScroll}

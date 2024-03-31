@@ -3,15 +3,15 @@ import { Fade } from "react-awesome-reveal";
 export default function Card({
   title,
   children,
-  flexDirection = "",
+  flexDirection,
   imgSrc,
   imgAlt,
 }) {
   return (
-    <div className={`flex gap-4 flex-col sm:flex-row sm:${flexDirection}`}>
-      <div className="flex-1">
+    <div className={`flex gap-4 flex-col sm:${flexDirection}`}>
+      <div className="flex-1 sm:text-left">
         <Fade direction="down">
-          <h3 className="text-2xl text-secondary my-2">{title}</h3>
+          <h3 className="text-2xl text-secondary my-2 md:text-3xl">{title}</h3>
         </Fade>
         {children}
       </div>
