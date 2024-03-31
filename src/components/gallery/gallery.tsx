@@ -1,8 +1,10 @@
+import { LucideFileSpreadsheet } from "lucide-react";
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
-export default function gallery() {
+export default function gallery({ galleryRef }) {
   const images = [
     {
       original: "/living-1.jpeg",
@@ -39,13 +41,24 @@ export default function gallery() {
     {
       original: "/bathroom-2.jpeg",
       thumbnail: "/bathroom-2.jpeg",
+      thumbnailHeight: 69,
     },
     // more images...
   ];
 
   return (
-    <div>
-      <ImageGallery items={images} />
+    <div ref={galleryRef} className="p-4">
+      <Fade direction="down">
+        <h3 className="text-2xl text-secondary my-2">Galería</h3>
+      </Fade>
+      <Fade>
+        <ImageGallery
+          items={images}
+          showPlayButton={false}
+          showNav={false}
+          showBullets={true}
+        />
+      </Fade>
     </div>
   );
 }

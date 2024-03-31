@@ -1,21 +1,40 @@
-import { Separator } from "@/components/ui/separator";
-import "./App.css";
+import { useRef } from "react";
 import Header from "./components/header/Header";
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import Overview from "./components/overview/Overview";
 import Gallery from "./components/gallery/gallery";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 function App() {
+  const overviewRef = useRef(null);
+  const galleryRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const handleScroll = (ref) => {
+    console.log(ref);
+    window.scrollTo({
+      top: ref.offsetTop - 50,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <div className="container border-solid border-2 border-indigo-600 text-center">
+    <div className="bg-neutral-50 mx-auto border-solid border-2 border-indigo-600 text-center max-w-[800px]">
       <Header />
-      <Separator className="my-4" />
-      <Navbar />
+      <Navbar
+        handleScroll={handleScroll}
+        overviewRef={overviewRef}
+        galleryRef={galleryRef}
+        contactRef={contactRef}
+      />
       <Hero />
-      <Overview />
-      <Gallery />
-      <footer>footer</footer>
+      <Overview overviewRef={overviewRef} />
+      <Gallery galleryRef={galleryRef} />
+      <Contact contactRef={contactRef} />
+      <Footer />
     </div>
   );
 }
