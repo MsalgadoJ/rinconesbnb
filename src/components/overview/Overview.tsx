@@ -21,10 +21,15 @@ export default function Overview({ overviewRef }: OverviewProps) {
       >
         <Fade delay={200}>
           <p className="text-primary md:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-            reiciendis voluptate aliquid laudantium assumenda vel veniam fugit
-            est, qui non laborum quod provident quas sequi culpa porro in
-            tempore. Commodi.
+            Sumérgete en la serenidad de nuestro encantador departamento,
+            situado en una de las ciudades más vibrantes de Venezuela. Con todas
+            las comodidades del hogar, nuestro espacio es el refugio perfecto
+            para relajarse y recargar energías.
+          </p>
+          <p className="text-primary md:text-lg pt-2">
+            Con una ubicación privilegiada a pocos metros de Playa Lido y con
+            variedad de servicios y restaurantes, podrás disfrutar de unas
+            vacaciones inolvidables.
           </p>
         </Fade>
       </Card>
@@ -36,22 +41,22 @@ export default function Overview({ overviewRef }: OverviewProps) {
       >
         <ul className="flex flex-col gap-2 md:text-lg">
           <Fade cascade>
-            <li className="flex gap-2 text-primary ">
+            <li className="flex items-center gap-2 text-primary ">
               <BedDouble color="#55c4d7" /> 3 habitaciones
             </li>
-            <li className="flex gap-2 text-primary">
+            <li className="flex gap-2 items-center  text-primary">
               <Bath color="#55c4d7" /> 3 baños
             </li>
-            <li className="flex gap-2 text-primary">
+            <li className="flex gap-2 items-center  text-primary">
               <Utensils color="#55c4d7" /> Cocina totalmente equipada
             </li>
-            <li className="flex gap-2 text-primary">
+            <li className="flex gap-2 items-center  text-primary">
               <Wifi color="#55c4d7" /> Conexión a internet
             </li>
-            <li className="flex gap-2 text-primary">
+            <li className="flex gap-2 items-center  text-primary">
               <TreePalm color="#55c4d7" /> Playa a 300 metros
             </li>
-            <li className="flex gap-2 text-primary">
+            <li className="flex gap-2 items-center  text-primary">
               <Car color="#55c4d7" /> Estacionamiento gratuito
             </li>
           </Fade>

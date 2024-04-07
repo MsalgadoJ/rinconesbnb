@@ -19,3 +19,13 @@ h1 {
 h2 {
   font-family: "Allura", cursive;
 }
+
+.image-gallery-thumbnail-image {
+  max-height: 56.25px;
+}
+
+@media screen and (min-width: 600px) {
+  .image-gallery-thumbnail-image {
+    max-height: 69px;
+  }
+}

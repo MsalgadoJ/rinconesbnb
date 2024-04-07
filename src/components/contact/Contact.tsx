@@ -15,6 +15,10 @@ export default function Contact({ contactRef }: ContactProps) {
         <h3 className="text-2xl text-secondary md:text-3xl">Haz una reserva</h3>
       </Fade>
       <Fade cascade>
+        <p className="text-primary md:text-lg max-w-[500px]">
+          ¡Reserva tu escapada perfecta hoy mismo y descubre todo lo que nuestro
+          encantador departamento tiene para ofrecer!
+        </p>
         <p className="text-primary md:text-lg">
           No esperes más y contáctanos{" "}
           <a
