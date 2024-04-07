@@ -1,10 +1,18 @@
 import { BedDouble, Bath, Utensils, TreePalm, Car, Wifi } from "lucide-react";
 import Card from "../Card/Card";
 import { Fade } from "react-awesome-reveal";
+import { RefObject } from "react";
 
-export default function Overview({ overviewRef }) {
+interface OverviewProps {
+  overviewRef: RefObject<HTMLDivElement>;
+}
+
+export default function Overview({ overviewRef }: OverviewProps) {
   return (
-    <div className="p-4 mt-4 flex flex-col gap-8 sm:gap-10" ref={overviewRef}>
+    <div
+      className="bg-neutral-50 py-8 px-4 mt-4 flex flex-col gap-8 sm:gap-10 sm:rounded-lg sm:shadow-xl md:p-12"
+      ref={overviewRef}
+    >
       <Card
         title="Bienvenidos"
         imgSrc="/living-1.jpeg"

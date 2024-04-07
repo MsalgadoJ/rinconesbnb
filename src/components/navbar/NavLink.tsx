@@ -1,11 +1,23 @@
-import React from "react";
+import { RefObject } from "react";
 
-export default function NavLink({ link, name, handleScroll, domRef }) {
+interface NavLinkProps {
+  link: string;
+  name: string;
+  handleScroll: (ref: HTMLElement) => void;
+  domRef: RefObject<HTMLDivElement>;
+}
+
+export default function NavLink({
+  link,
+  name,
+  handleScroll,
+  domRef,
+}: NavLinkProps) {
   return (
     <li className="inline-block sm:text-lg">
       <a
         href={`#${link}`}
-        onClick={() => handleScroll(domRef.current)}
+        onClick={() => handleScroll(domRef.current!)}
         className="text-primary font-bold transition-colors hover:text-light"
       >
         {name}

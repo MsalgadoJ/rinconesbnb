@@ -1,11 +1,15 @@
-import React from "react";
+import { RefObject } from "react";
 import { Fade } from "react-awesome-reveal";
 
-export default function Contact({ contactRef }) {
+interface ContactProps {
+  contactRef: RefObject<HTMLDivElement>;
+}
+
+export default function Contact({ contactRef }: ContactProps) {
   return (
     <div
       ref={contactRef}
-      className="pt-4 pb-6 px-4 flex flex-col items-center justify-center gap-2 h-[300px]"
+      className="bg-neutral-50 pt-4 pb-6 px-4 flex flex-col items-center justify-center gap-2 h-[300px] sm:rounded-t-lg"
     >
       <Fade direction="down">
         <h3 className="text-2xl text-secondary md:text-3xl">Haz una reserva</h3>

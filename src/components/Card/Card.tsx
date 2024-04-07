@@ -1,4 +1,13 @@
+import { ReactElement } from "react";
 import { Fade } from "react-awesome-reveal";
+
+interface CardProps {
+  title: string;
+  children: ReactElement;
+  flexDirection: string;
+  imgSrc: string;
+  imgAlt: string;
+}
 
 export default function Card({
   title,
@@ -6,7 +15,7 @@ export default function Card({
   flexDirection,
   imgSrc,
   imgAlt,
-}) {
+}: CardProps) {
   return (
     <div className={`flex gap-4 flex-col sm:${flexDirection}`}>
       <div className="flex-1 sm:text-left">
