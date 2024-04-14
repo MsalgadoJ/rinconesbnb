@@ -1,4 +1,12 @@
-import { BedDouble, Bath, Utensils, TreePalm, Car, Wifi } from "lucide-react";
+import {
+  BedDouble,
+  Bath,
+  Utensils,
+  TreePalm,
+  Car,
+  Wifi,
+  Coffee,
+} from "lucide-react";
 import Card from "../Card/Card";
 import { Fade } from "react-awesome-reveal";
 import { RefObject } from "react";
@@ -49,6 +57,9 @@ export default function Overview({ overviewRef }: OverviewProps) {
             </li>
             <li className="flex gap-2 items-center  text-primary">
               <Utensils color="#55c4d7" /> Cocina totalmente equipada
+            </li>
+            <li className="flex gap-2 items-center  text-primary">
+              <Coffee color="#55c4d7" /> Sala de estar espaciosa
             </li>
             <li className="flex gap-2 items-center  text-primary">
               <Wifi color="#55c4d7" /> Conexión a internet
