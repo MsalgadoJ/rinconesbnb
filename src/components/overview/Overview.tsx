@@ -15,7 +15,7 @@ export default function Overview({ overviewRef }: OverviewProps) {
     >
       <Card
         title="Bienvenidos"
-        imgSrc="/living-1.jpeg"
+        imgSrc="/Images/living-1.jpeg"
         imgAlt="sala de estar"
         flexDirection="flex sm:flex-row"
       >
@@ -35,14 +35,14 @@ export default function Overview({ overviewRef }: OverviewProps) {
       </Card>
       <Card
         title="Qué encontrarás?"
-        imgSrc="/living-2.png"
+        imgSrc="/Images/living-2.png"
         imgAlt="sala de estar"
         flexDirection="flex sm:flex-row-reverse"
       >
         <ul className="flex flex-col gap-2 md:text-lg">
           <Fade cascade>
             <li className="flex items-center gap-2 text-primary ">
-              <BedDouble color="#55c4d7" /> 3 habitaciones
+              <BedDouble color="#55c4d7" /> 4 habitaciones
             </li>
             <li className="flex gap-2 items-center  text-primary">
               <Bath color="#55c4d7" /> 3 baños
@@ -57,7 +57,7 @@ export default function Overview({ overviewRef }: OverviewProps) {
               <TreePalm color="#55c4d7" /> Playa a 300 metros
             </li>
             <li className="flex gap-2 items-center  text-primary">
-              <Car color="#55c4d7" /> Estacionamiento gratuito
+              <Car color="#55c4d7" /> 2 puestos de estacionamiento
             </li>
           </Fade>
         </ul>

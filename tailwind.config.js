@@ -8,7 +8,6 @@ module.exports = {
     "./src/**/*.{ts,tsx}",
     "./src/**/*.{html,js}",
   ],
-
   // Color principal: #1a748e
   // Color secundario: #d38e31
   // Color claro: #55c4d7
@@ -25,7 +24,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        hero: "url('/hero.jpg')",
+        hero: "url('/Images/hero.jpg')",
       },
       colors: {
         primary: "#1a748e",

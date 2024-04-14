@@ -24,12 +24,12 @@ export default function Card({
         </Fade>
         {children}
       </div>
-      <picture className="flex-1 rounded-lg overflow-hidden">
+      <picture className="flex-1 rounded-lg overflow-hidden border border-4 border-dark shadow-lg">
         <Fade delay={100}>
           <img
             src={imgSrc}
             alt={imgAlt}
-            className=" w-full h-full object-cover rounded-lg shadow-xl"
+            className=" w-full h-full object-cover transition-transform hover:scale-125"
           />
         </Fade>
       </picture>

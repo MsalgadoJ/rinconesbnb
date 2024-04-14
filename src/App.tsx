@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <div className="bg-transparent mx-auto text-center max-w-[1000px] sm:rounded-lg shadow-lg my-4">
+    <div className="bg-transparent mx-auto text-center max-w-[1000px] sm:rounded-lg my-4">
       <Header headerRef={headerRef} />
       <Navbar
         handleScroll={handleScroll}

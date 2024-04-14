@@ -10,40 +10,40 @@ interface GalleryProps {
 export default function gallery({ galleryRef }: GalleryProps) {
   const images = [
     {
-      original: "/living-1.jpeg",
-      thumbnail: "/living-1.png",
+      original: "/Images/living-1.jpeg",
+      thumbnail: "/Images/living-1.png",
     },
     {
-      original: "/living-3.jpeg",
-      thumbnail: "/living-3.jpeg",
+      original: "/Images/living-3.jpeg",
+      thumbnail: "/Images/living-3.jpeg",
     },
     {
-      original: "/living-2.png",
-      thumbnail: "/living-2.png",
+      original: "/Images/living-2.png",
+      thumbnail: "/Images/living-2.png",
     },
     {
-      original: "/dinning.jpeg",
-      thumbnail: "/dinning.jpeg",
+      original: "/Images/dinning.jpeg",
+      thumbnail: "/Images/dinning.jpeg",
     },
     {
-      original: "/bedroom-1.jpeg",
-      thumbnail: "/bedroom-1.jpeg",
+      original: "/Images/bedroom-1.jpeg",
+      thumbnail: "/Images/bedroom-1.jpeg",
     },
     {
-      original: "/bathroom-on-suite.jpeg",
-      thumbnail: "/bathroom-on-suite.jpeg",
+      original: "/Images/bathroom-on-suite.jpeg",
+      thumbnail: "/Images/bathroom-on-suite.jpeg",
     },
     {
-      original: "/bedroom-2.jpeg",
-      thumbnail: "/bedroom-2.jpeg",
+      original: "/Images/bedroom-2.jpeg",
+      thumbnail: "/Images/bedroom-2.jpeg",
     },
     {
-      original: "/bedroom-3.jpeg",
-      thumbnail: "/bedroom-3.jpeg",
+      original: "/Images/bedroom-3.jpeg",
+      thumbnail: "/Images/bedroom-3.jpeg",
     },
     {
-      original: "/bathroom-2.png",
-      thumbnail: "/bathroom-2.png",
+      original: "/Images/bathroom-2.png",
+      thumbnail: "/Images/bathroom-2.png",
     },
   ];
 
