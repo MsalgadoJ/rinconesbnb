@@ -18,7 +18,7 @@ export default function NavLink({
       <a
         href={`#${link}`}
         onClick={() => handleScroll(domRef.current!)}
-        className="text-primary font-bold transition-colors hover:text-light"
+        className="text-primary font-bold transition-colors no-underline hover:text-light focus:outline-none focus:underline focus:underline-offset-8 "
       >
         {name}
       </a>
