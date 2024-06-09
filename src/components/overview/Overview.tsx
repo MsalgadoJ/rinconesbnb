@@ -29,10 +29,10 @@ export default function Overview({ overviewRef }: OverviewProps) {
       >
         <Fade delay={200}>
           <p className="text-primary md:text-lg">
-            Sumérgete en la serenidad de nuestro encantador departamento,
-            situado en una de las ciudades más vibrantes de Venezuela. Con todas
-            las comodidades del hogar, nuestro espacio es el refugio perfecto
-            para relajarse y recargar energías.
+            Sumérgete en la serenidad de nuestro encantador apartamento, situado
+            en una de las ciudades más vibrantes de Venezuela. Con todas las
+            comodidades del hogar, nuestro espacio es el refugio perfecto para
+            relajarse y recargar energías.
           </p>
           <p className="text-primary md:text-lg pt-2">
             Con una ubicación privilegiada a pocos metros de Playa Lido y con
